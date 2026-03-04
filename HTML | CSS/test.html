@@ -102,5 +102,74 @@
     <p><strong>안개</strong>를 걷어내고 실험실 찾는 중</p><br>
     <p><em>안개</em>를 걷어내고 실험실 찾는 중</p>
     <br>
+
+    <strong>✍🏼 &#60; form &#62; 태그에서 fieldset 활용</strong><br>
+    <form action="#">
+        <fieldset>
+            <legend>기본 정보</legend>
+            <p>
+                <label for="userid">ID</label>
+                <input type="text" id="userid">
+            </p>
+            <p>
+                <label for="pw">Password</label>
+                <input type="password" id="pw">
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>선택 정보</legend>
+            <p>
+                <label for="age">나이</label>
+                <input type="number" id="age"></input>
+            </p>
+            <p>
+                <label for="recommender">추천인</label>
+                <input type="text" id="recommender">
+            </p>
+        </fieldset>
+    </form>
+    <br>
+    <strong>✍🏼 &#60; form &#62; 태그에서 textarea 활용</strong><br>
+
+    <form action="#" method="post"> <!-- 글 작성하는 form 양식이므로 post -->
+        <fieldset>
+            <legend>블로그 글쓰기</legend>
+            <p>
+                <label for="title">제목</label>
+                <input type="text" id="title">
+            </p>
+            <p>
+                <label for="desc">내용</label>
+                <textarea id="desc" name="desc"></textarea>
+            </p>
+        </fieldset>
+    </form>
+    <br><br><br><br><br><br><br>
+    <strong>✍🏼 &#60; form &#62; 콤보 박스 만들기</strong><br>
+    <select name="city" id="city">
+        <option value="강북구">강북구</option>
+        <option value="강남구">강남구</option>
+        <option value="서초구" selected>서초구</option>
+        <option value="중원구">중원구</option>
+        <option value="분당구">분당구</option>
+    </select>
+    <br><br><br><br><br><br><br>
+    <strong>✍🏼 콤보 박스 만들기 : &#60; optgroup &#62; 태그 활용 </strong><br>
+    <select name="food" id="food" size="5" multiple>
+        <optgroup label="떡볶이">
+            <option value="차돌떡볶이">차돌떡볶이</option>
+            <option value="짜장떡볶이">짜장떡볶이</option>
+            <option value="카레떡볶이">카레떡볶이</option>
+            <option value="매운떡볶이">매운떡볶이</option>    
+        </optgroup>
+        <optgroup label="튀김">
+            <option value="오징어튀김">오징어튀김</option>
+            <option value="김말이튀김">김말이</option>
+            <option value="야채튀김">야채튀김</option>
+            <option value="고구마튀김">고구마튀김</option>
+        </optgroup>
+    </select>
+    <br><br><br><br><br><br>
+    <button type="submit">이 버튼을 누르면 제출 할 수 있다.</button>
 </body>
 </html>
