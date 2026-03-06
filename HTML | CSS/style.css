@@ -1,0 +1,21 @@
+/* 웹 폰트 사용 */
+@font-face {
+    font-family: 'GangwonEducationModuche';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEdu_OTFLightA.woff') format('woff');
+    font-weight: 300;
+    font-display: swap;
+}
+
+body {
+    font-family: 'GangwonEducationModuche'; /* 폰트 지정 */
+}
+h1 {
+    font-size: 30px; /* 폰트 크기 지정 */
+}
+p {
+    font-size: 20px;
+}
+.strong {
+    font-size: 24px;
+    color: skyblue; /* 폰트 색상 지정 */
+}
