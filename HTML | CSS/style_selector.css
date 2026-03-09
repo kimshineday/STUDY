@@ -1,0 +1,128 @@
+/* 웹 폰트 불러오기 */
+@font-face {
+    font-family: 'NostalgicGellyRoll';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2601-1@1.0/Griun_Gellyroll-Rg.woff2') format('woff2');
+    font-weight: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'NostalgicMongtori';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2601-1@1.0/Griun_Mongtori-Rg.woff2') format('woff2');
+    font-weight: normal;
+    font-display: swap;
+}
+/* 전체 선택자 */
+* {
+    font-family: 'NostalgicGellyRoll';
+}
+/* 태그 선택자 */
+p {
+    color: #939393;
+}
+/* 아이디 선택자 */
+#title {
+    font-family: 'NostalgicMongtori';
+}
+/* 클래스 선택자 */
+.category {
+    font-family: 'NostalgicMongtori';
+}
+
+.strong {
+    font-size: 1.2em;
+    /* color: #45803c; */
+}
+/* 기본 속성 선택자 */
+[href] {
+    text-decoration: none; /* 링크 밑줄 삭제 */
+    color: #d34c26;
+}
+
+img[alt="이미지없음"] {
+    color: red;
+}
+
+/* 그룹 선택자 */
+.strong, h3 {
+    color: #45803c;
+} */
+
+/* 자식 선택자 */
+.child > p {
+    font-family: 'NostalgicMongtori';
+}
+/* 하위 선택자 */
+.descendant span {
+    font-family: 'NostalgicMongtori';
+    color: #d34c26;
+}
+
+/* 인접 형제 선택자 */
+.adjacent + p {
+    color: black;
+}
+
+/* 일반 형제 선택자 */
+.general ~ p.gen {
+    color: black;
+}
+
+.general ~ span {
+    color: #d34c26;
+}
+/* 가상 요소 선택자 */
+.Pseudo::before {
+    content: 'HTML에 명시된 구성 요소는 아니지만 존재하는 것으로 취급해 선택자를 지정하는 방법.';
+}
+
+.Pseudo::after {
+    content: '여러 가상 요소 선택자들이 있지만 자주 사용하는 두가지가 있다.';
+}
+
+/* 가상 클래스 선택자 */
+a:link {
+    color: #d34c26;
+}
+
+a:visited {
+    color: #d34c26;
+}
+
+.link-visited:visited {
+    color: #45803c;
+}
+
+/* 동적 가상 클래스 선택자 */
+a:hover {
+    color: aquamarine;
+}
+/* 알록달록 hover 1 */
+/* 1. 애니메이션 시나리오 정의 */
+@keyframes rainbow-move {
+  0% { color: #ff0000; }    /* 빨강 */
+  25% { color: #ffff00; }   /* 노랑 */
+  50% { color: #00ff00; }   /* 초록 */
+  75% { color: #0000ff; }   /* 파랑 */
+  100% { color: #ff0000; }  /* 다시 빨강 (끊김 없는 반복을 위해) */
+}
+
+/* 2. hover 시 애니메이션 연결 */
+a:hover {
+  /* 이름: rainbow-move, 시간: 2초, 반복: 무한, 속도: 일정하게 */
+  animation: rainbow-move 2s infinite linear;
+}
+
+/* 알록달록 hover 2 */
+
+a:hover {
+    background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+    -webkit-background-clip: text; /* 배경을 글자 모양으로 자름 */
+    -webkit-text-fill-color: transparent; /* 글자 내부를 투명하게 해서 배경이 보이게 함 */
+    background-size: 200% auto;
+    animation: gradient-slide 1.5s linear infinite;
+}
+
+@keyframes gradient-slide {
+    from { background-position: 0% center; }
+    to { background-position: 200% center; }
+}
