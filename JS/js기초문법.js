@@ -146,3 +146,21 @@ console.log(10 !== '10'); // true
 console.log(10 !== '9'); // true
 console.log(10 !== 9); // true
 console.log(10 !== 10); // false
+
+// 논리 연산자
+console.log("" && "cat"); // 
+console.log('cat'&&'dog'); // dog
+
+console.log(false || true || false); // true
+console.log(false || false); // false
+console.log("" || false || 'cat'); // cat
+
+console.log(!true); // false
+console.log(!(true && false)); // false -> true
+console.log(!(10 < 20 && 20 < 10)); // false -> true
+
+// 삼항 연산자
+let score1 = 90;
+let score2 = 89;
+console.log(score1 >= 90 ? 'A+' : 'B');
+console.log(score2 >= 90 ? 'A+' : 'B');
