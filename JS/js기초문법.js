@@ -164,3 +164,14 @@ let score1 = 90;
 let score2 = 89;
 console.log(score1 >= 90 ? 'A+' : 'B');
 console.log(score2 >= 90 ? 'A+' : 'B');
+
+// 암시적 형 변환
+const result = 10 + '10';
+
+console.log(result);
+
+// 명시적 형 변환
+let num6 = 4;
+let strNum = '10';
+
+console.log(Number(strNum) - num6); // 6
