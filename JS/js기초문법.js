@@ -91,3 +91,58 @@ let studentScore2 = {
 
 console.log(studentScore2.koreanScore);
 console.log(studentScore2['koreanScore']);
+
+/* 연산자 */
+// 이항 산술 연산자
+let sum = 10 + 20;
+let sub = 20 - 10;
+let multi = 10 * 20;
+let div = 10 / 2;
+let remain = 10 % 3;
+let expon = 2 ** 3;
+
+console.log(sum);
+console.log(sub);
+console.log(multi);
+console.log(div);
+console.log(remain);
+console.log(expon);
+
+// 단항 산술 연산자
+let increment = 10;
+increment ++;
+
+let decrement = 10;
+decrement --;
+
+console.log(increment);
+console.log(decrement);
+
+// 전치 연산과 후치 연산
+let num2 = 10;
+
+console.log(num2++);
+console.log(++num2);
+
+// 단항 부정 연산자
+let num3 = -10;
+num4 = -num3;
+
+console.log(num4);
+
+// 복합 대입 연산자
+let num5 = 10;
+
+console.log(num5 *= 5);
+
+// 동등 연산자(==)와 일치 연산자(===)
+console.log(10=='10'); // true
+console.log(10==='10'); // false
+
+// 부등 연산자(!=)와 불일치 연산자(!==)
+console.log(10 != '10'); // false
+console.log(10 !== '10'); // true
+
+console.log(10 !== '9'); // true
+console.log(10 !== 9); // true
+console.log(10 !== 10); // false
