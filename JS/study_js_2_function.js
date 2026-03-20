@@ -103,4 +103,33 @@ const sum_ = function sum_(num1, num2){
     return `${num1} + ${num2} = ${result}`
 };
 
-console.log('덧셈 ' + sum_(1, 2))
+console.log('덧셈 ' + sum_(1, 2));
+
+// 즉시 실행 함수 IIFE
+(function(){
+    console.log(`2 * 1 = ${2 * 1}`);
+    console.log(`2 * 2 = ${2 * 2}`);
+    console.log(`2 * 3 = ${2 * 3}`);
+    console.log(`2 * 4 = ${2 * 4}`);
+    console.log(`2 * 5 = ${2 * 5}`);
+    console.log(`2 * 6 = ${2 * 6}`);
+    console.log(`2 * 7 = ${2 * 7}`);
+    console.log(`2 * 8 = ${2 * 8}`);
+    console.log(`2 * 9 = ${2 * 9}`);
+})();
+
+(function gugudan_(num) {
+    console.log(`${num} * 1 = ${num * 1}`);
+    console.log(`${num} * 2 = ${num * 2}`);
+    console.log(`${num} * 3 = ${num * 3}`);
+    console.log(`${num} * 4 = ${num * 4}`);
+    console.log(`${num} * 5 = ${num * 5}`);
+    console.log(`${num} * 6 = ${num * 6}`);
+    console.log(`${num} * 7 = ${num * 7}`);
+    console.log(`${num} * 8 = ${num * 8}`);
+    console.log(`${num} * 9 = ${num * 9}`);
+})(19);
+
+// gugudan_(17); // 즉시 실행 함수 재호출 X
+
+    

@@ -177,3 +177,41 @@ console.log('덧셈 ' + sum_(1, 2)); // 덧셈 1 + 2 = 3
 ```
 기존 함수에서는 함수 내부에서 출력, 함수에서는 값만 산출해 외부에서 출력하는 방식으로 바꾸었다.  
 return 반환 값이 없을 경우 'undefined'으로 출력이 된다.  
+
+## 즉시 실행 함수 IIFE (Immediately Invoked Function Expression)
+```js
+(function(){})();
+```
+함수를 정의하면서 동시에 실행한다.  
+실행 후 메모리에 데이터가 남아 있지 않는다. (재호출 시 참조 오류 발생)  
+```js
+// 예시
+(function(){
+    console.log(`2 * 1 = ${2 * 1}`);
+    console.log(`2 * 2 = ${2 * 2}`);
+    console.log(`2 * 3 = ${2 * 3}`);
+    console.log(`2 * 4 = ${2 * 4}`);
+    console.log(`2 * 5 = ${2 * 5}`);
+    console.log(`2 * 6 = ${2 * 6}`);
+    console.log(`2 * 7 = ${2 * 7}`);
+    console.log(`2 * 8 = ${2 * 8}`);
+    console.log(`2 * 9 = ${2 * 9}`);
+})();
+```
+매개변수도 사용할 수 있다.  
+```js
+(function gugudan_(num) {
+    console.log(`${num} * 1 = ${num * 1}`);
+    console.log(`${num} * 2 = ${num * 2}`);
+    console.log(`${num} * 3 = ${num * 3}`);
+    console.log(`${num} * 4 = ${num * 4}`);
+    console.log(`${num} * 5 = ${num * 5}`);
+    console.log(`${num} * 6 = ${num * 6}`);
+    console.log(`${num} * 7 = ${num * 7}`);
+    console.log(`${num} * 8 = ${num * 8}`);
+    console.log(`${num} * 9 = ${num * 9}`);
+})(19);
+
+gugudan_(17); // Uncaught ReferenceError: gugudan_ is not defined
+```
+함수 선언 즉시 실행한 후, 사라지는 함수이기에 호출 할 경우 에러 발생한다.  
