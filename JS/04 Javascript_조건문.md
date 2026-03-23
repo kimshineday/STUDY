@@ -184,3 +184,5 @@ function getAccessLevel(role) {
   }
 }
 ```
+
+[🔗 실습 코드 보러 가기](study_js_3_if_switch.js)

@@ -215,3 +215,5 @@ return 반환 값이 없을 경우 'undefined'으로 출력이 된다.
 gugudan_(17); // Uncaught ReferenceError: gugudan_ is not defined
 ```
 함수 선언 즉시 실행한 후, 사라지는 함수이기에 호출 할 경우 에러 발생한다.  
+
+[🔗 실습 코드 보러 가기](study_js_2_function.js)
